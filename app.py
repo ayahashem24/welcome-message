@@ -1,7 +1,9 @@
 from flask import Flask
-app = Flask(name)
+
+app = Flask(__name__)
 
 @app.get("/")
 def home():
-    return "Hello ِAyoya"
+    return "Hello Ayoya"
+
 
